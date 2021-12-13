@@ -1,10 +1,15 @@
+
+
+/* color: rgba(red, green, blue, alpha); */
 :root{
     --background-color:white;
     --nav-text-color:white;
     --nav-bg:blue;
     --footer-bg:black;
     --footer-text-color:white;
+    --model-bg:rgba(0,4,149,0.5);
 } 
+
 
 *{
     padding: 0px;
@@ -12,6 +17,7 @@
 }
 
 html{
+    
     background-color:var(--background-color);
 }
 
@@ -19,7 +25,6 @@ html{
 /* header nav css start  */
  .bg_navbar{
      background-color:var(--nav-bg);
-     min-height: 56px;
  }
  .bg_drop{
      text-align: center;
@@ -47,6 +52,7 @@ html{
 
  /*Footer nav css start*/
 .footer{
+    padding: 25px 0px;
     background-color: var(--footer-bg);
     color: var(--footer-text-color);
     margin: auto;
@@ -74,4 +80,13 @@ html{
  .home_section{
      height: 100vh;
  }
+
+
+
  /*Home css end*/
+
+ /*Model css start*/
+ .model_bg{
+     background-color:var(--model-bg);
+ }
+ /*MOdel css end*/
