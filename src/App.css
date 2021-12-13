@@ -1,13 +1,15 @@
 
 
 /* color: rgba(red, green, blue, alpha); */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap');
 :root{
     --background-color:white;
     --nav-text-color:white;
     --nav-bg:#9b45b2;
     --footer-bg:#9b45b2;
     --footer-text-color:white;
-    --model-bg:rgba(0,4,149,0.5);
+    --model-bg:#9b45b2;
 
 
 
@@ -42,11 +44,15 @@ html{
 #nav_toggle{
     color:var(--nav-bg) ;
 }
- .bg_navbar{
+#navbar_bg{
+    z-index: 100;
+    width: 100%;
      background-color:var(--nav-bg);
+     position:fixed;
+     top: 0px;
  }
  .nav_link{
-     text-shadow:1px 0px 0px white;
+     text-shadow:0.5px 0px 0px white;
      font-size: var(--nav-link-text);
      color: var(--nav-text-color);
      font-weight: 600;
@@ -70,13 +76,16 @@ html{
 
  /*Footer nav css start*/
 .footer{
+    font-family: 'JetBrains Mono', monospace;
     padding: 25px 0px;
     background-color: var(--footer-bg);
     color: var(--footer-text-color);
     margin: auto;
 }
 .footer_card h2{
-    font-size: 1.7rem;
+    font-size: 1.3rem;
+    font-weight: 900;
+    font-variant-caps: titling-caps;
     /* background-color: green; */
 }
 .footer_card .follow_us_t{
@@ -96,6 +105,7 @@ html{
 
  /*Home css start*/
  .home_section{
+     padding-top: 55px;
      height: 100vh;
  }
 
@@ -108,3 +118,21 @@ html{
      background-color:var(--model-bg);
  }
  /*MOdel css end*/
+
+ /*Carousel css start*/
+ .carousel_body{
+     width: 100%;
+     margin: auto;
+     background-color: red;
+     z-index: 0;
+ }
+ img{
+    opacity: 0.5;
+ }
+ .center {
+    background-color: blue;
+    position: absolute;
+    top: 20%;
+    height: 50%;
+  }
+ /*carousel css end*/

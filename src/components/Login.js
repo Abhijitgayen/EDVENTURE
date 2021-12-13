@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Modal, Button, Form, FormLabel, Container, Row, Col } from 'react-bootstrap';
 
-export default function ModelSet(props) {
+export default function Login(props) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -14,7 +14,7 @@ export default function ModelSet(props) {
 
       <Modal show={show} onHide={handleClose} className='model_bg'>
         <Modal.Header closeButton>
-          <Modal.Title>SIGN IN</Modal.Title>
+          <Modal.Title>Log In</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Container>
@@ -39,10 +39,10 @@ export default function ModelSet(props) {
         <Modal.Footer>
           
           <Button variant="primary" onClick={handleClose}>
-            Sign In
+            Log In
           </Button>
           <Button variant="secondary" onClick={handleClose}>
-            Log In
+            Sign Up
           </Button>
         </Modal.Footer>
       </Modal>

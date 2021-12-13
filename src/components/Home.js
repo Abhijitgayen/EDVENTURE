@@ -1,13 +1,18 @@
 import React, { Component } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
+import CarouselHome from './CarouselHome'
 
 export class Home extends Component {
+
     render() {
         return (
             <>
+        
             <section className="home_section">
+                  <CarouselHome/>
                 <Container>
                     <Row>
+                  
                         <Col>
                         </Col>
                     </Row>
@@ -28,9 +33,7 @@ export class Home extends Component {
                         </Col>
                     </Row>
                 </Container>
-            </section>
-
-                
+            </section> 
             </>
         )
     }

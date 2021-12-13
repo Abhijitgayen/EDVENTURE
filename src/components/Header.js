@@ -4,14 +4,14 @@ import { Nav, Container, Dropdown } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css';
 import { FaSignInAlt } from 'react-icons/fa';
 //import { AiOutlineAlignLeft } from 'react-icons/ai'
-import ModelSet from './ModelSet';
+import Login from './Login';
 
 export class Header extends Component {
 
     render() {
         return (
             <>
-                <Navbar collapseOnSelect expand="lg" variant="dark" className='bg_navbar'>
+                <Navbar collapseOnSelect expand="lg" variant="dark" className='bg_navbar ' id='navbar_bg'>
                     <Container>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" id="nav_toggle" />
                         <Navbar.Brand href="#home">EDVENTURE LOGO</Navbar.Brand>
@@ -21,7 +21,7 @@ export class Header extends Component {
                                 <Nav.Link href="#Home" className='nav_link active'> Home </Nav.Link>
                                 <Nav.Link className='nav_link'>
                                 <Dropdown>
-                                    <Dropdown.Toggle className="nav_link" size="sm" variant='light' id="drop_toggle">
+                                    <Dropdown.Toggle  size="sm" variant='light' id="drop_toggle">
                                         Courses
                                     </Dropdown.Toggle>
 
@@ -40,7 +40,7 @@ export class Header extends Component {
                                 <Nav.Link href="#contact" className='nav_link'>Contact</Nav.Link>
                                 <Nav.Link eventKey={2} href="#sign_up" >
                                     {/* <Button> SIGN UP <FaSignInAlt className="sign_icon"/></Button>  */}
-                                    <ModelSet btn_name='SIGN UP' icon={<FaSignInAlt className='sign_icon' />} />
+                                    <Login btn_name='Log In' icon={<FaSignInAlt className='sign_icon' />} />
                                 </Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
