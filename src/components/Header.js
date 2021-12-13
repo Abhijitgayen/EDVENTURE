@@ -18,11 +18,11 @@ export class Header extends Component {
                             <Nav className="ms-auto">
                                 <Nav.Link href="#about_us" className='nav_link active'> Home </Nav.Link>
                                 <NavDropdown title="Courses" id="collasible-nav-dropdown" className='nav_link bg_drop'>
-                                    <NavDropdown.Item href="#action/3.1"  className='nav_link'>Gate</NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.2"  className='nav_link'>Engineering</NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.3"   className='nav_link'>10th and 12th</NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/3.1"  >Gate</NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/3.2"  >Engineering</NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/3.3" >10th and 12th</NavDropdown.Item>
                                     <NavDropdown.Divider />
-                                    <NavDropdown.Item href="#action/3.4" className='nav_link' >Free Study Material</NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/3.4" >Free Study Material</NavDropdown.Item>
                                 </NavDropdown>
                             </Nav>
                             <Nav>
