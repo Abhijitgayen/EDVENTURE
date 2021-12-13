@@ -51,7 +51,7 @@ export default class Footer extends Component {
                         </Row>
                         <Row className="footer_copy">
                             <Col>
-                            <div className="footer_text">footer data</div>
+                            <div className="footer_text">&copy; 2022 , EDVENTURE, All Rights Reserved</div>
                             </Col>
                         </Row>
                     </Container>

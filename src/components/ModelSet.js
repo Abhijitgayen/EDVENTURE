@@ -8,7 +8,7 @@ export default function ModelSet(props) {
   const handleShow = () => setShow(true);
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+      <Button variant="light" size="sm" onClick={handleShow}>
         {props.btn_name}{props.icon}
       </Button>
 
@@ -19,17 +19,17 @@ export default function ModelSet(props) {
         <Modal.Body>
           <Container>
             <Form>
-              <Row className="col-12">
-                <Col className="col-4">
+              <Row >
+                <Col className="col-12 col-sm-4">
                   <FormLabel>User ID :</FormLabel>
                 </Col>
-                <Col className="col-8">
+                <Col className="col-12 col-sm-8">
                   <input></input>
                 </Col>
-                <Col className="col-4">
+                <Col className="col-12 col-sm-4 ">
                 <FormLabel>Password :</FormLabel>
                 </Col>
-                <Col className="col-8">
+                <Col className="col-12 col-sm-8 ">
                 <input type='password'></input>
                 </Col>
               </Row>

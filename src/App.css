@@ -4,10 +4,15 @@
 :root{
     --background-color:white;
     --nav-text-color:white;
-    --nav-bg:blue;
-    --footer-bg:black;
+    --nav-bg:#9b45b2;
+    --footer-bg:#9b45b2;
     --footer-text-color:white;
     --model-bg:rgba(0,4,149,0.5);
+
+
+
+
+    --nav-link-text:1.1rem;
 } 
 
 
@@ -23,30 +28,43 @@ html{
 
 
 /* header nav css start  */
+#drop_bg{
+    background-color:var(--nav-bg);
+    position:absolute;
+    left: 20%;
+    box-shadow: 1px 2px 15px black;
+}
+#dropdown_item{
+     font-size: var(--nav-link-text);
+     color: var(--nav-text-color);
+     font-weight: 300;
+}
+#nav_toggle{
+    color:var(--nav-bg) ;
+}
  .bg_navbar{
      background-color:var(--nav-bg);
  }
- .bg_drop{
-     text-align: center;
- }
  .nav_link{
-     font-size: 1.3rem;
+     text-shadow:1px 0px 0px white;
+     font-size: var(--nav-link-text);
      color: var(--nav-text-color);
      font-weight: 600;
-     text-align: center;
+     text-align: left;
  }
- .sign_up{
+ #sign_up{
+     background-color: white;
      align-items: right;
      position: relative;
      left:5%;
-     font-size: 1.2rem;
+     font-size: var(--nav-link-text);
      font-weight: 500;
      border-radius: 15px;
  }
  .sign_icon{
     margin-left: 10px;
      padding: 0px;
-     font-size: 1.3rem;
+     font-size: var(--nav-link-text);
  }
  /*Header nav css end*/
 
@@ -68,7 +86,7 @@ html{
    
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .footer_copy .footer_text{
     text-align: right;
