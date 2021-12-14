@@ -119,7 +119,7 @@ html{
      width: 100%;
      align-items: center;
      display: flex;
-     height: 40vh;
+     height: 20vh;
      min-height: 256px;
      background-color:var(--nav-bg);
      padding: 25px 0px;
@@ -139,8 +139,8 @@ html{
  /*Carousel css start*/
  .carousel_body{
      width: 100%;
-     height:30vh;
-     min-height: 300px;
+     height:auto;
+     min-height: 256px;
      background-color: var(--carousel-bg);
      z-index: 0;
      overflow: hidden;
