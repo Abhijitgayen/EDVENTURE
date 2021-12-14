@@ -61,13 +61,13 @@ export class CarouselHome extends Component {
     const allcarouselItem=this.state.carouselItem.map((carousel)=>{
     
         return(
-            <Carousel.Item interval={carousel.interval} key={carousel.id}>
+            <Carousel.Item interval={carousel.interval} key={carousel.id} className='carousel_item align-item-center'>
                     <img
-                        className="d-block w-100"
+                        className="d-block col-md-6 w-100 h-100"
                         src={carousel.img}
                         alt={carousel.title}
                     />
-                    <Carousel.Caption className='center'>
+                    <Carousel.Caption id='center'>
                         <h3>{carousel.title}</h3>
                         <p>{carousel.content}</p>
                     </Carousel.Caption>

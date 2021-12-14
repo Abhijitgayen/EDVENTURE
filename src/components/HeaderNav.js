@@ -15,7 +15,7 @@ export class HeaderNav extends Component {
                 <Navbar collapseOnSelect expand="lg" variant="dark" className='bg_navbar ' id='navbar_bg'>
                     <Container>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" id="nav_toggle" />
-                        <Navbar.Brand href="#home"><img className='brand_logo' src={comp_logo}/></Navbar.Brand>
+                        <Navbar.Brand href="#home"><img className='brand_logo' src={comp_logo} alt='comp brand'/></Navbar.Brand>
 
                         <Navbar.Collapse id="responsive-navbar-nav" >
                             <Nav className="ms-auto" id='header_nav_link'>
