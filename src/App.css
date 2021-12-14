@@ -139,8 +139,8 @@ html{
  /*Carousel css start*/
  .carousel_body{
      width: 100%;
-     height: auto;
-     min-height: 256px;
+     height:30vh;
+     min-height: 300px;
      background-color: var(--carousel-bg);
      z-index: 0;
      overflow: hidden;
