@@ -6,7 +6,7 @@ import { FaSignInAlt } from 'react-icons/fa';
 //import { AiOutlineAlignLeft } from 'react-icons/ai'
 import Login from './Login';
 
-export class Header extends Component {
+export class HeaderNav extends Component {
 
     render() {
         return (
@@ -52,4 +52,4 @@ export class Header extends Component {
     }
 }
 
-export default Header
+export default HeaderNav
