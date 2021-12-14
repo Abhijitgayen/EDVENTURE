@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { FaSignInAlt } from 'react-icons/fa';
 //import { AiOutlineAlignLeft } from 'react-icons/ai'
 import Login from './Login';
+import comp_logo from '../images/edventure_logo_line.png';
 
 export class HeaderNav extends Component {
 
@@ -14,7 +15,7 @@ export class HeaderNav extends Component {
                 <Navbar collapseOnSelect expand="lg" variant="dark" className='bg_navbar ' id='navbar_bg'>
                     <Container>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" id="nav_toggle" />
-                        <Navbar.Brand href="#home">EDVENTURE LOGO</Navbar.Brand>
+                        <Navbar.Brand href="#home"><img className='brand_logo' src={comp_logo}/></Navbar.Brand>
 
                         <Navbar.Collapse id="responsive-navbar-nav" >
                             <Nav className="ms-auto" id='header_nav_link'>

@@ -31,6 +31,10 @@ html{
 
 
 /* header nav css start  */
+.brand_logo{
+    background-color:white;
+    width: 145px;
+}
 #drop_bg{
     background-color:var(--nav-bg);
     position:absolute;
