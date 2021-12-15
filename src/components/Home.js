@@ -23,25 +23,25 @@ export default function Home() {
                 <Container className='home_mid_f' >
                     <Row className='justify-content-center'>
                         <Col className='home_cb col-12 col-sm-6 col-md-3'>
-                            <div className='home_card '>
+                            <div id='home_card '>
                             <h1>250+</h1>
                             <p>Students </p>
                             </div>
                         </Col>
                         <Col className='home_cb col-12 col-sm-6 col-md-3'>
-                            <div className='home_card'>
+                            <div id='home_card'>
                             <h1>50+</h1>
                             <p>Top IITs Tutor</p>
                             </div>
                         </Col>
                         <Col className='home_cb col-12 col-sm-6 col-md-3'>
-                            <div className='home_card'> 
+                            <div id='home_card'> 
                             <h1>25+</h1>
                             <p>Course Avaliable</p>
                             </div>
                         </Col>
                         <Col className='home_cb col-12 col-sm-6 col-md-3'>
-                            <div className='home_card'>
+                            <div id='home_card'>
                             <h1>80%</h1>
                             <p>Better Enhanced Programs</p>
                             </div>
