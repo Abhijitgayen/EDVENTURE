@@ -121,11 +121,14 @@ html{
      width: 100%;
      align-items: center;
      display: flex;
-     min-height:600px;
+     min-height:400px;
      height: 100vh;
      background-color:var(--nav-bg);
      padding: 25px 3px;
      color: var(--nav-text-color);
+ }
+ .home_top_text{
+     padding-bottom:22px ;
  }
  #home_img{
      width: 100%;
@@ -133,7 +136,24 @@ html{
      z-index: 500;
      opacity: 1;
  }
-
+.home_mid_f{
+    padding: 50px 0px;
+    /* background-color: red; */
+}
+.home_card{
+    margin: 5px;
+    text-align: center;
+    width:auto;
+    padding: 10px;
+    /* background-color:green; */
+    box-shadow: 2px 2px 10px var(--nav-bg);
+    border-radius: 5px;
+    color:var(--nav-bg);
+}
+.home_card:hover{
+    color:var(--nav-text-color);
+    background-color: var(--nav-bg);
+}
 
 
  /*Home css end*/
