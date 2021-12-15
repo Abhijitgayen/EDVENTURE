@@ -140,13 +140,13 @@ html{
  }
 .home_mid_f{
     padding: 50px 0px;
-    /* background-color: red; */
+    background-color: red;
 }
 .home_card{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 5px;
+    margin: 15px auto;
     text-align: center;
     height:145px;
     padding: 10px;
