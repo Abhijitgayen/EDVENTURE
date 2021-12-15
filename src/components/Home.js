@@ -22,21 +22,29 @@ export default function Home() {
                 </header>
                 <Container className='home_mid_f' >
                     <Row className='justify-content-center'>
-                        <Col className='home_card col-9 col-sm-4 col-md-2'>
+                        <Col className='col-9 col-sm-5 col-md-3'>
+                            <div className='home_card '>
                             <h1>250+</h1>
                             <p>Students </p>
+                            </div>
                         </Col>
-                        <Col className='home_card col-9 col-sm-4 col-md-2'>
+                        <Col className=' col-9 col-sm-5 col-md-3'>
+                            <div className='home_card'>
                             <h1>50+</h1>
                             <p>Top IITs Tutor</p>
+                            </div>
                         </Col>
-                        <Col className='home_card col-9 col-sm-4 col-md-2'>
+                        <Col className='col-9 col-sm-5 col-md-3'>
+                            <div className='home_card'> 
                             <h1>25+</h1>
                             <p>Course Avaliable</p>
+                            </div>
                         </Col>
-                        <Col className='home_card col-9 col-sm-4 col-md-2'>
+                        <Col className=' col-9 col-sm-5 col-md-3'>
+                            <div className='home_card'>
                             <h1>80%</h1>
                             <p>Better Enhanced Programs</p>
+                            </div>
                         </Col>
                     </Row>
                 </Container>
