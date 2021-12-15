@@ -1,6 +1,7 @@
 import React from 'react'
-import { Col, Container, Row, Button, Accordion } from 'react-bootstrap';
+import { Col, Container, Row, Button } from 'react-bootstrap';
 import online_learning from '../images/online_learning.svg'
+import CourseStyle from './CourseStyle';
 
 export default function Home() {
     return (
@@ -24,65 +25,101 @@ export default function Home() {
                     <Row className='justify-content-center'>
                         <Col className='home_cb col-12 col-sm-6 col-md-3'>
                             <div className='home_card '>
-                            <h1>250+</h1>
-                            <p>Students </p>
+                                <h1>250+</h1>
+                                <p>Students </p>
                             </div>
                         </Col>
                         <Col className='home_cb col-12 col-sm-6 col-md-3'>
                             <div className='home_card'>
-                            <h1>50+</h1>
-                            <p>Top IITs Tutor</p>
-                            </div>
-                        </Col>
-                        <Col className='home_cb col-12 col-sm-6 col-md-3'>
-                            <div className='home_card'> 
-                            <h1>25+</h1>
-                            <p>Course Avaliable</p>
+                                <h1>50+</h1>
+                                <p>Top IITs Tutor</p>
                             </div>
                         </Col>
                         <Col className='home_cb col-12 col-sm-6 col-md-3'>
                             <div className='home_card'>
-                            <h1>80%</h1>
-                            <p>Better Enhanced Programs</p>
+                                <h1>25+</h1>
+                                <p>Course Avaliable</p>
+                            </div>
+                        </Col>
+                        <Col className='home_cb col-12 col-sm-6 col-md-3'>
+                            <div className='home_card'>
+                                <h1>80%</h1>
+                                <p>Better Enhanced Programs</p>
                             </div>
                         </Col>
                     </Row>
                 </Container>
             </section>
+            <CourseStyle/>
             <section className="home_section">
+                
+{/*               
                 <Container>
-                    <Row>
-                        <Col>
-                        <h1>   </h1>
-                            <Accordion defaultActiveKey="0" flush>
-                                <Accordion.Item eventKey="0">
-                                    <Accordion.Header>Accordion Item #1</Accordion.Header>
-                                    <Accordion.Body>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                        est laborum.
-                                    </Accordion.Body>
-                                </Accordion.Item>
-                                <Accordion.Item eventKey="1">
-                                    <Accordion.Header>Accordion Item #2</Accordion.Header>
-                                    <Accordion.Body>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                        est laborum.
-                                    </Accordion.Body>
-                                </Accordion.Item>
-                            </Accordion>
-                        </Col>
-                    </Row>
+                    <h1>What's Your goal ?</h1>
+                    <Accordion defaultActiveKey="0" flush>
+                        <Row>
+                            <Accordion.Item eventKey="0" className='col-12 col-sm-6 col-md-6'>
+                                <Accordion.Header>Build a career</Accordion.Header>
+                                <Accordion.Body>
+                                    Career Paths are our most complete offering, with everything you need to land the job.
+                                </Accordion.Body>
+                            </Accordion.Item>
+                            <Accordion.Item className='col-12 col-sm-6 col-md-6' eventKey="0" >
+                                <div>
+                                    <h4>Front-End Engineer</h4>
+                                    <p>Beginner Frindly, 121 Lessons</p>
+                                </div>
+                                <div>
+                                    <h4>Front-End Engineer</h4>
+                                    <p>Beginner Frindly, 121 Lessons</p>
+                                </div>
+                                <div>
+                                    <h4>Front-End Engineer</h4>
+                                    <p>Beginner Frindly, 121 Lessons</p>
+                                </div>
+                                <div>
+                                    <h4>Front-End Engineer</h4>
+                                    <p>Beginner Frindly, 121 Lessons</p>
+                                </div>
+                            </Accordion.Item>
+                        </Row>
+
+
+                        <Row>
+                            <Accordion.Item eventKey="1" className='col-12 col-sm-6 col-md-6'>
+                                <Accordion.Header >Accordion Item #2</Accordion.Header>
+                                <Accordion.Body>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                    est laborum.
+                                </Accordion.Body>
+                            </Accordion.Item>
+                            <Col className='col-12 col-sm-6 col-md-6'>
+                                <div>
+                                    <h4>Front-End Engineer</h4>
+                                    <p>Beginner Frindly, 121 Lessons</p>
+                                </div>
+                                <div>
+                                    <h4>Front-End Engineer</h4>
+                                    <p>Beginner Frindly, 121 Lessons</p>
+                                </div>
+                                <div>
+                                    <h4>Front-End Engineer</h4>
+                                    <p>Beginner Frindly, 121 Lessons</p>
+                                </div>
+                                <div>
+                                    <h4>Front-End Engineer</h4>
+                                    <p>Beginner Frindly, 121 Lessons</p>
+                                </div>
+                            </Col>
+                        </Row>
+                    </Accordion>
                 </Container>
+             */}
             </section>
             <section className="home_section">
                 <Container>
