@@ -32,8 +32,9 @@ html{
 
 /* header nav css start  */
 .brand_logo{
-    background-color:white;
+    /* background-color:white; */
     width: 145px;
+    opacity: 1;
 }
 #drop_bg{
     background-color:var(--nav-bg);
@@ -83,6 +84,7 @@ html{
 
  /*Footer nav css start*/
 .footer{
+    width: 100%;
     font-family: 'JetBrains Mono', monospace;
     padding: 25px 0px;
     background-color: var(--footer-bg);
@@ -119,11 +121,17 @@ html{
      width: 100%;
      align-items: center;
      display: flex;
-     height: 40vh;
-     min-height: 256px;
+     min-height:600px;
+     height: 100vh;
      background-color:var(--nav-bg);
-     padding: 25px 0px;
+     padding: 25px 3px;
      color: var(--nav-text-color);
+ }
+ #home_img{
+     width: 100%;
+     padding: 5px 15px;
+     z-index: 500;
+     opacity: 1;
  }
 
 
