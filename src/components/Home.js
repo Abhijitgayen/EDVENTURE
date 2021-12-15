@@ -53,7 +53,7 @@ export default function Home() {
                 <Container>
                     <Row>
                         <Col>
-                        <h1></h1>
+                        <h1>   </h1>
                             <Accordion defaultActiveKey="0" flush>
                                 <Accordion.Item eventKey="0">
                                     <Accordion.Header>Accordion Item #1</Accordion.Header>
