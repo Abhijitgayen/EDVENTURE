@@ -131,7 +131,7 @@ html{
      padding-bottom:22px ;
  }
  #home_img{
-     width: 90%;
+     width: 100%;
      height: auto;
      padding: 5px 15px;
      z-index: 500;
@@ -142,7 +142,7 @@ html{
     /* background-color: red; */
 }
 .home_card{
-    margin: 5px;
+    margin: 10px 5px;
     text-align: center;
     height:auto;
     padding: 10px;
