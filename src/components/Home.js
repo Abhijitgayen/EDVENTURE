@@ -14,7 +14,7 @@ export default function Home() {
                                 <p>Handcrafted at IIT , Edventure aim to impart rich Courses helping Students in academics as well as competitative Exams</p>
                                 <Button variant="light" >VENTURE NOW</Button>
                             </Col >
-                            <Col hidden className="col-12 col-sm-12 col-md-6 offset-md-6 col-xl-6 offset-xl-0">
+                            <Col className="col-12 col-sm-12 col-md-6 offset-md-6 col-xl-6 offset-xl-0">
                                 <img src={online_learning} alt='online_learning' id='home_img' />
                             </Col>
                         </Row>
