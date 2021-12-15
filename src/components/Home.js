@@ -20,7 +20,7 @@ export default function Home() {
                         </Row>
                     </Container>
                 </header>
-                <Container className='home_mid_f' hidden>
+                <Container className='home_mid_f' >
                     <Row className='justify-content-center'>
                         <Col className='home_card col-9 col-sm-4 col-md-2'>
                             <h1>250+</h1>
