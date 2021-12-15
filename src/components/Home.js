@@ -21,7 +21,7 @@ export default function Home() {
                     </Container>
                 </header>
                 <Container className='home_mid_f' >
-                    <Row className='justify-content-center' hidden>
+                    <Row className='justify-content-center'>
                         <Col className='home_cb col-12 col-sm-6 col-md-3'>
                             <div className='home_card '>
                             <h1>250+</h1>
