@@ -5,15 +5,15 @@ export class AllCourse extends Component {
     render() {
         return (
             <>
-                <Container>
-                    <h2> Course Adventure</h2>
+                <Container className='course_container'>
+                    <h2 className='co_text'> Course Adventure</h2>
                     <Accordion defaultActiveKey="0">
                         <Accordion.Item eventKey="0">
                             <Row>
-                                <Col className='col-12 col-sm-12 col-md-4'>
+                                <Col className='col-12 col-sm-12 col-md-4 order-md-last'>
                                     <Accordion.Header >Accordion Item #1</Accordion.Header>
                                 </Col>
-                                <Col className='co_set_1 col-12 col-sm-12 col-md-8'>
+                                <Col className='co_set_1 col-12 col-sm-12 col-md-8 order-md-first'>
                                     <Accordion.Body className='allCo_body' >
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -28,10 +28,10 @@ export class AllCourse extends Component {
                         </Accordion.Item>
                         <Accordion.Item eventKey="1">
                             <Row>
-                                <Col className='col-12 col-sm-12 col-md-4' >
+                                <Col className='col-12 col-sm-12 col-md-4 order-md-last' >
                                     <Accordion.Header >Accordion Item #2</Accordion.Header>
                                 </Col>
-                                <Col className='co_set_2 col-12 col-sm-12 col-md-8'>
+                                <Col className='co_set_2 col-12 col-sm-12 col-md-8 order-md-first'>
                                     <Accordion.Body className='allCo_body'>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -46,10 +46,10 @@ export class AllCourse extends Component {
                         </Accordion.Item>
                         <Accordion.Item eventKey="2">
                             <Row>
-                                <Col className='col-12 col-sm-12 col-md-4' >
+                                <Col className='col-12 col-sm-12 col-md-4 order-md-last' >
                                     <Accordion.Header >Accordion Item #3</Accordion.Header>
                                 </Col>
-                                <Col className='co_set_3 col-12 col-sm-12 col-md-8'>
+                                <Col className='co_set_3 col-12 col-sm-12 col-md-8 order-md-first'>
                                     <Accordion.Body className='allCo_body'>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -64,10 +64,10 @@ export class AllCourse extends Component {
                         </Accordion.Item>
                         <Accordion.Item eventKey="3">
                             <Row>
-                                <Col className='col-12 col-sm-12 col-md-4' >
+                                <Col className='col-12 col-sm-12 col-md-4 order-md-last' >
                                     <Accordion.Header >Accordion Item #4</Accordion.Header>
                                 </Col>
-                                <Col className='co_set_4 col-12 col-sm-12 col-md-8'>
+                                <Col className='co_set_4 col-12 col-sm-12 col-md-8 order-md-first'>
                                     <Accordion.Body className='allCo_body'>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -82,10 +82,10 @@ export class AllCourse extends Component {
                         </Accordion.Item>
                         <Accordion.Item eventKey="4">
                             <Row>
-                                <Col className='col-12 col-sm-12 col-md-4' >
+                                <Col className='col-12 col-sm-12 col-md-4 order-md-last' >
                                     <Accordion.Header >Accordion Item #5</Accordion.Header>
                                 </Col>
-                                <Col className='co_set_5 col-12 col-sm-12 col-md-8'>
+                                <Col className='co_set_5 col-12 col-sm-12 col-md-8 order-md-first'>
                                     <Accordion.Body className='allCo_body'>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -100,10 +100,10 @@ export class AllCourse extends Component {
                         </Accordion.Item>
                         <Accordion.Item eventKey="5">
                             <Row>
-                                <Col className='col-12 col-sm-12 col-md-4' >
+                                <Col className='col-12 col-sm-12 col-md-4 order-md-last' >
                                     <Accordion.Header >Accordion Item #6</Accordion.Header>
                                 </Col>
-                                <Col className='co_set_6 col-12 col-sm-12 col-md-8'>
+                                <Col className='co_set_6 col-12 col-sm-12 col-md-8 order-md-first'>
                                     <Accordion.Body className='allCo_body' >
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim

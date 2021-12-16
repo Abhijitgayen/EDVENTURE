@@ -14,7 +14,7 @@ export default function Home() {
                             <Col className="home_top_text col-12 col-sm-12 col-md-8 col-xl-6">
                                 <h1>EMBARK ON AN ADVENTURE TO MORDERN INTERACTIVE EDUCATION</h1>
                                 <p>Handcrafted at IIT , Edventure aim to impart rich Courses helping Students in academics as well as competitative Exams</p>
-                                <Button variant="light" >VENTURE NOW</Button>
+                                <Button variant="light" href='#venture' >VENTURE NOW</Button>
                             </Col >
                             <Col className="col-12 col-sm-12 col-md-6 offset-md-6 col-xl-6 offset-xl-0">
                                 <img src={online_learning} alt='online_learning' id='home_img' />
@@ -55,9 +55,10 @@ export default function Home() {
                 <div className='course_details'>
                     <CourseStyle />
                 </div>
-                <div className='all_course'>
+                <div className='all_course' id="venture">
                     <AllCourse/>
                 </div>
+
             </section>
 
             <section className="home_section">
