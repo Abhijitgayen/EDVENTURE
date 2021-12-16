@@ -9,7 +9,8 @@ export default function CourseStyle(set) {
                 <h1>What's Your goal ?</h1>
                 <Row>
                     <Accordion defaultActiveKey="0" className=' col-12 col-sm-12 col-md-4' flush >
-                        <Accordion.Item eventKey="0"
+                        <Accordion.Item eventKey="0">
+                            <Accordion.Header
                             onClick={() => {
                                 var y = document.getElementById('set_2');
                                 if (y.style.display === 'block') {
@@ -21,14 +22,14 @@ export default function CourseStyle(set) {
                                 } else {
                                     x.style.display = "none";
                                 }
-                            }} >
-                            <Accordion.Header>Build a career</Accordion.Header>
+                            }}>Build a career</Accordion.Header>
                             <Accordion.Body>
                                 Career Paths are our most complete offering, with everything you need to land the job.
                             </Accordion.Body>
                         </Accordion.Item>
-                        <Accordion.Item eventKey="1"
-                            onClick={() => {
+                        <Accordion.Item eventKey="1">
+                            <Accordion.Header 
+                               onClick={() => {
                                 var x = document.getElementById('set_1');
                                 if (x.style.display === 'block') {
                                     x.style.display = "none";
@@ -39,8 +40,7 @@ export default function CourseStyle(set) {
                                 } else {
                                     y.style.display = "none";
                                 }
-                            }}>
-                            <Accordion.Header >Gain a Skill</Accordion.Header>
+                            }}>Gain a Skill</Accordion.Header>
                             <Accordion.Body>
                                  Skill paths focus on what's needed to pick up a specific,applicable shill.
                             </Accordion.Body>
