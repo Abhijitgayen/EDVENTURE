@@ -3,6 +3,7 @@ import { Col, Container, Row, Button } from 'react-bootstrap';
 import online_learning from '../images/online_learning.svg'
 import AllCourse from './AllCourse';
 import CourseStyle from './CourseStyle';
+import DemoClass from './DemoClass';
 
 export default function Home() {
     return (
@@ -58,7 +59,9 @@ export default function Home() {
                 <div className='all_course' id="venture">
                     <AllCourse/>
                 </div>
-
+                <div className='book_demo'>
+                    <DemoClass/>
+                </div>
             </section>
 
             <section className="home_section">
