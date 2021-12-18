@@ -22,7 +22,7 @@ function DemoClass() {
                                 <p>Most affordable Price</p>
                             </Col>
                         </Row>
-                        <Accordion defaultActiveKey="0" flush style={{ background: 'yellow' }} >
+                        <Accordion className='accordion_demo' defaultActiveKey="0" flush style={{ background: 'yellow' }} >
                             <Accordion.Item eventKey="0">
                                 <Accordion.Header><h6>Personalized learning and Mentorship </h6></Accordion.Header>
                                 <Accordion.Body>

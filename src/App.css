@@ -238,7 +238,7 @@ padding: 15px 0px;
     padding: 30px  ;
     border-radius: 25px;
     background-color: white;
-    margin: auto;
+    margin:auto;
     box-shadow: 1px 2px 35px black;
 }
 .demo_from:hover{
@@ -258,7 +258,6 @@ padding: 15px 0px;
 input{
     padding: 5px;
     border-radius: 5px ;
-    margin-top: 55px;
     background-color:rgba(4,5,6,0);
     border: 1px solid var(--nav-bg);
     outline: none;
@@ -293,6 +292,7 @@ input::placeholder{
 .book_demo{
     background-color: var(--demo-bg);
     padding:56px 0px ;
+    min-height: 806px; ;
 }
 .demp_det p{
     text-align: center;
@@ -304,6 +304,9 @@ input::placeholder{
 .demo_img{
     width: 50%;
     opacity: 1;
+}
+.accordion_demo{
+    padding: 45px 0px;
 }
  /*Home css end*/
 
