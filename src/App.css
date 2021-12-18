@@ -13,6 +13,8 @@
     --carousel-bg:black;
     --carousel-text-color:white;
     --carousel-text-bg:blue;
+    --demo-bg:yellow;
+
 
 
     --nav-link-text:1.1rem;
@@ -234,9 +236,16 @@ padding: 15px 0px;
 }
 .demo_from{
     padding: 30px  ;
-    background-image: linear-gradient(225deg,yellow,yellow,lightyellow,yellow,yellow) ;
-
-    border-radius: 5px;
+    border-radius: 25px;
+    background-color: white;
+    margin: auto;
+    box-shadow: 1px 2px 35px black;
+}
+.demo_from:hover{
+    box-shadow: 1px 2px 15px black;
+}
+.demo_from h4{
+    text-align: center;
 }
 #demo_btn{
     background-color: white;
@@ -244,25 +253,56 @@ padding: 15px 0px;
 }
 #demo_btn:hover{
     color: white;
-    background-color: yellow;
+    background-color:var(--demo-bg);
 }
 input{
     padding: 5px;
-    border-radius: 5px 5px 0px 0px;
-    border: none;
-    border-bottom: 2px solid  black;
+    border-radius: 5px ;
     margin-top: 55px;
     background-color:rgba(4,5,6,0);
-}
-input:focus-within{
+    border: 1px solid var(--nav-bg);
     outline: none;
-    border-bottom:2px solid var(--nav-bg) ;
+}
+input::placeholder{
+    color:var(--nav-bg);
 }
 .demo_input{
- margin:10px 0px ;
+ margin:30px 0px;
+}
+.demo_input label{
+    display: block;
+	float:left;
+	margin-top: -19px;
+	background: #FFFFFF;
+	height: 14px;
+	padding: 2px 5px 2px 5px;
+	color:black;
+	font-size: 14px;
+    position: relative;
+    left: 1rem;
+    bottom: -8px;
+	/* overflow: hidden; */
+	font-family: Arial, Helvetica, sans-serif;
 }
 .online_video{
     width: 80%;
+    opacity: 1;
+    position: relative;
+    left: 2rem;
+}
+.book_demo{
+    background-color: var(--demo-bg);
+    padding:56px 0px ;
+}
+.demp_det p{
+    text-align: center;
+}
+.demp_det{
+    display: flex;
+    text-align: center;
+}
+.demo_img{
+    width: 50%;
     opacity: 1;
 }
  /*Home css end*/
