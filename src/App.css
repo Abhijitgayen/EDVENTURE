@@ -331,13 +331,12 @@ input::placeholder{
 /*table from data in home*/
 
 .table_section{
-    margin: 35px 0px;
+    margin-top: 35px; 
     padding: 0px;
     background-color: red;
 }
 .table_t{
     text-align: center;
-    padding: 5px 0px 10px 0px;
 }
 .table_set_img {
     display: flex;
@@ -353,7 +352,7 @@ input::placeholder{
     /* background-color: red; */
 }
 .padding_table_cen{
-    padding:19px 0px ;
+    padding-top: 12px;
 }
 .table_content{
     order: 1px solid lightseagreen;
