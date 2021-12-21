@@ -350,7 +350,7 @@ input::placeholder{
 .table_com{
     text-align: center;
     font-weight: 500;
-    /* background-color: red; */
+    background-color: red;
 }
 .padding_table_cen{
     padding-top: 12px;
