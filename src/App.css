@@ -333,9 +333,10 @@ input::placeholder{
 .table_section{
     margin-top: 35px; 
     padding: 0px;
-    background-color: red;
+    /* background-color: red; */
 }
 .table_t{
+    padding: 25px 0px;
     text-align: center;
 }
 .table_set_img {
