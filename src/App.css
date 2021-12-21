@@ -361,6 +361,8 @@ input::placeholder{
 .table_data{
     background-color: lightsteelblue;
     outline: 1px solid lightslategrey;
+    padding: 0px;
+    overflow: hidden;
 }
 
 
