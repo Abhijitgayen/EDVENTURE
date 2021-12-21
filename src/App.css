@@ -332,6 +332,7 @@ input::placeholder{
 
 .table_section{
     margin: 35px 0px;
+    padding: 0px;
 }
 .table_t{
     text-align: center;
@@ -354,15 +355,15 @@ input::placeholder{
     padding:19px 0px ;
 }
 .table_content{
-    outline: 1px solid lightseagreen;
-    padding: 5px 0px;
+    order: 1px solid lightseagreen;
+    padding-top: 5px;
+    padding-bottom: 5px;
     background-color: lightseagreen;
 }
 .table_data{
     background-color: lightsteelblue;
-    outline: 1px solid lightslategrey;
+    border: 1px solid lightslategrey;
     padding: 0px;
-    overflow: hidden;
 }
 
 
