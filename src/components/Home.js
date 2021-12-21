@@ -70,7 +70,7 @@ export default function Home() {
 
                 <Container className='table_section'> 
                     <h3 className='table_t'> Let no pandemic hamper your results !!</h3>
-                    <Row className=''>
+                    <Row >
                         <Col className='table_set_img col-12 col-sm-12 col-md-5 col-xl-4'>
                             <img src={tutorial_video} alt='' className='table_img'></img>
                         </Col>

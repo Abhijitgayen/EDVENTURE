@@ -333,6 +333,7 @@ input::placeholder{
 .table_section{
     margin: 35px 0px;
     padding: 0px;
+    background-color: red;
 }
 .table_t{
     text-align: center;
