@@ -2,6 +2,7 @@ import React from 'react'
 import { Button, Accordion, Col, Container, Form, Row } from 'react-bootstrap'
 import online_video from '../images/online_video.svg'
 
+
 function DemoClass() {
     return (
         <>
@@ -55,8 +56,8 @@ function DemoClass() {
                             </Accordion.Item>
 
                         </Accordion>
-
                     </Col>
+
                     <Col className=' demo_from col-11 col-sm-11 col-md-7 col-xl-6'>
                         <h4>Book your free demo class</h4>
                         <Row className='align-item-center'>
@@ -88,6 +89,7 @@ function DemoClass() {
                         </Form>
                     </Col>
                 </Row>
+            
             </Container>
         </>
     )

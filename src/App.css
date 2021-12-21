@@ -314,8 +314,84 @@ input::placeholder{
     flex-direction: row;
     justify-content: space-around;
 }
-#card_details{
-    margin-top: 12px;
+#card_set_details{
+    margin: 12px 0px;
+    padding: 5px;
+}
+#card_img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    opacity: 1;
+}
+#card_details h5{
+    text-align: center;
+}
+
+
+
+.table_section{
+    margin: 35px 0px;
+}
+.table_t{
+    text-align: center;
+    padding: 5px 0px 10px 0px;
+}
+.table_set_img {
+    display: flex;
+    justify-content: center;
+}
+.table_img{
+    width: 100%;
+    opacity: 1;
+}
+.table_com{
+    text-align: center;
+    font-weight: 500;
+    /* background-color: red; */
+}
+.padding_table_cen{
+    padding:19px 0px ;
+}
+.table_content{
+    outline: 1px solid lightseagreen;
+    padding: 5px 0px;
+    background-color: lightseagreen;
+}
+.table_data{
+    background-color: lightsteelblue;
+    outline: 1px solid lightslategrey;
+}
+
+
+.why_ed_all{
+    background-color: lightcoral;
+    margin: 25px 0px;
+    padding: 50px 0px;
+}
+.why_ed_t{
+    text-align: center;
+}
+.why_ed{
+    display: flex;
+    justify-content: space-evenly;
+}
+.why_edven{
+    text-align: center;
+    width: 202px;
+    margin: 15px 0px 5px 0px;
+    border-radius: 5px;
+    height: 150px;
+    padding: 5px;
+    /* box-shadow: 2px 3px 45px  black; */
+}
+.why_edven:hover{
+    box-shadow: 1px 2px 15px black;
+}
+.why_edven_img{
+    text-align: center;
+    opacity: 1;
+    width: 105px;
 }
  /*Home css end*/
 
