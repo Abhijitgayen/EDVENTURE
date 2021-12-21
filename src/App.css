@@ -328,7 +328,7 @@ input::placeholder{
     text-align: center;
 }
 
-
+/*table from data in home*/
 
 .table_section{
     margin: 35px 0px;
@@ -372,16 +372,10 @@ input::placeholder{
 .why_ed_t{
     text-align: center;
 }
-.why_ed{
-    display: flex;
-    justify-content: space-evenly;
-}
 .why_edven{
     text-align: center;
-    width: 202px;
     margin: 15px 0px 5px 0px;
     border-radius: 5px;
-    height: 150px;
     padding: 5px;
     /* box-shadow: 2px 3px 45px  black; */
 }
