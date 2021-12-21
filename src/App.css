@@ -263,7 +263,8 @@ input{
     outline: none;
 }
 input::placeholder{
-    color:var(--nav-bg);
+    color:rgba(8, 8, 8, 0.575);
+    font-weight: 500;
 }
 .demo_input{
  margin:30px 0px;
@@ -307,6 +308,14 @@ input::placeholder{
 }
 .accordion_demo{
     padding: 45px 0px;
+}
+.review_all{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#card_details{
+    margin-top: 12px;
 }
  /*Home css end*/
 

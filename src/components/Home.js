@@ -4,6 +4,7 @@ import online_learning from '../images/online_learning.svg'
 import AllCourse from './AllCourse';
 import CourseStyle from './CourseStyle';
 import DemoClass from './DemoClass';
+import Review from './Review';
 
 export default function Home() {
     return (
@@ -65,6 +66,9 @@ export default function Home() {
             </section>
 
             <section className="home_section">
+                <div>
+                    <Review/>
+                </div>
                 <Container>
                     <Row>
                         <Col>
