@@ -74,7 +74,7 @@ export default function Home() {
                         <Col className='table_set_img col-12 col-sm-12 col-md-5 col-xl-4'>
                             <img src={tutorial_video} alt='' className='table_img'></img>
                         </Col>
-                        <Col className='table_content col-11 col-sm-11 col-md-6 col-xl-7'>
+                        <Col className='table_content col-12 col-sm-12 col-md-7 col-xl-8'>
                             <div>
                                     <Row>
                                         <Col className='table_com col-12 col-sm-12 col-md-12 col-xl-2'>{' '}</Col>

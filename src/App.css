@@ -336,7 +336,8 @@ input::placeholder{
     background-color: red;
 }
 .table_t{
-    padding: 25px 0px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     text-align: center;
 }
 .table_set_img {
@@ -344,7 +345,7 @@ input::placeholder{
     justify-content: center;
 }
 .table_img{
-    width: 100%;
+    width: 80%;
     opacity: 1;
 }
 .table_com{
