@@ -419,7 +419,7 @@ input::placeholder{
  .shadow-effect {
     background: #fff;
     padding: 20px;
-    border-radius: 4px;
+    border-radius: 12px;
     text-align: center;
     border: 1px solid #ECECEC;
     box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.02);
@@ -446,8 +446,9 @@ input::placeholder{
     margin: -17px auto 0;
     display: table;
     width: auto;
+    background-color: var(--nav-bg);
     /* background: linear-gradient(100deg, #845EC2, #BE93FD); */
-    background: linear-gradient(100deg, #FF8066, #FF918D);
+    /* background: linear-gradient(100deg, #FF8066, #FF918D); */
     /* background: linear-gradient(135deg, #ff3e00, #eaa400); */
     padding: 9px 35px;
     border-radius: 12px;
@@ -468,7 +469,7 @@ input::placeholder{
     transform: scale3d(1.0, 1.0, 1);
   }
   .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-    background: #56423D;
+    background:var(--nav-bg);
     transform: translate3d(0px, -50%, 0px) scale(0.8);
   }
   .owl-carousel .owl-dots {
@@ -481,7 +482,7 @@ input::placeholder{
   }
   .owl-carousel .owl-dots .owl-dot span{ 
     /* background: #eaa400; */
-    background: #56423D;
+    background: var(--nav-bg);
     display: inline-block;
     height: 20px;
     width: 20px;
