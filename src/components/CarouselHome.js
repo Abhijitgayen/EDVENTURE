@@ -1,138 +1,249 @@
-import { Carousel } from 'react-bootstrap';
+import React, { Component } from 'react';
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 import blog_1 from '../images/blog1.jpg';
 import blog_2 from '../images/blog2.jpg';
 import blog_3 from '../images/blog3.jpg';
 import blog_4 from '../images/blog4.jpg';
 import blog_5 from '../images/blog5.jpg';
+const options = {
+    loop: true,
+    center: true,
+    items: 3,
+    margin: 0,
+    autoplay: true,
+    dots: true,
+    autoplayTimeout: 4500,
+    smartSpeed: 450,
+    nav: false,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 3
+        },
+        1000: {
+            items: 3
+        }
+    }
+};
 
-import React, { Component } from 'react'
 
 export class CarouselHome extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
 
-        this.state={
-            carouselItem:[
+        this.state = {
+            carouselItem: [
                 {
-                    id:0,
-                    title:'Slide One',
-                    content:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illum.',
+                    id: 0,
+                    title: 'Slide One',
+                    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illum.',
                     img: blog_1,
-                    interval:1000
+                    interval: 1000
 
                 },
                 {
-                    id:1,
-                    title:'Slide Two',
-                    content:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illum.',
+                    id: 1,
+                    title: 'Slide Two',
+                    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illum.',
                     img: blog_2,
-                    interval:1000
+                    interval: 1000
 
                 },
                 {
-                    id:2,
-                    title:'Slide Three',
-                    content:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illum.',
+                    id: 2,
+                    title: 'Slide Three',
+                    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illum.',
                     img: blog_3,
-                    interval:1000
+                    interval: 1000
 
                 },
                 {
-                    id:3,
-                    title:'Slide Four',
-                    content:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illum.',
+                    id: 3,
+                    title: 'Slide Four',
+                    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illum.',
                     img: blog_4,
-                    interval:1000
+                    interval: 1000
 
                 },
                 {
-                    id:4,
-                    title:'Slide Five',
-                    content:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illum.',
+                    id: 4,
+                    title: 'Slide Five',
+                    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illum.',
                     img: blog_5,
-                    interval:1000
+                    interval: 1000
+
+                },
+                {
+                    id: 5,
+                    title: 'Slide Six',
+                    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illum.',
+                    img: blog_1,
+                    interval: 1000
+
+                },
+                {
+                    id: 6,
+                    title: 'Slide Seven',
+                    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illum.',
+                    img: blog_1,
+                    interval: 1000
+
+                },
+                {
+                    id: 7,
+                    title: 'Slide Eight',
+                    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illum.',
+                    img: blog_1,
+                    interval: 1000
+
+                },
+                {
+                    id: 8,
+                    title: 'Slide Nine',
+                    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illum.',
+                    img: blog_1,
+                    interval: 1000
+
+                },
+                {
+                    id: 9,
+                    title: 'Slide Ten',
+                    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illum.',
+                    img: blog_1,
+                    interval: 1000
+
+                },
+                {
+                    id: 10,
+                    title: 'Slide Eleven',
+                    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illum.',
+                    img: blog_1,
+                    interval: 1000
+
+                },
+                {
+                    id: 11,
+                    title: 'Slide Twelve',
+                    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illum.',
+                    img: blog_1,
+                    interval: 1000
 
                 },
 
             ],
         };
-    }
-    render() {
-    const allcarouselItem=this.state.carouselItem.map((carousel)=>{
-    
-        return(
-            <Carousel.Item interval={carousel.interval} key={carousel.id} className='carousel_item align-item-center'>
-                    <img
-                        className="d-block col-md-6 w-100 h-100"
-                        src={carousel.img}
-                        alt={carousel.title}
-                    />
-                    <Carousel.Caption id='center'>
-                        <h3>{carousel.title}</h3>
+    //Owl Carousel Settings
+        
+        }
+        render() {
+            const allcarouselItem = this.state.carouselItem.map((carousel) => {
+                return (
+                    <>
+                    <div className='item' key={carousel.id}>
+                    <div class="shadow-effect">
+                        <img class="img-circle" src={carousel.img} alt=' ' />
                         <p>{carousel.content}</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-        )
+                    </div>
+                    <div class="testimonial-name">
+                        <h6>{carousel.title}</h6>
+                    </div>
+                </div>
+                </>
 
-    });
-        return (
-            <>
-            <Carousel className='carousel_body' >
-                {allcarouselItem}
-            </Carousel>  
-            </>
-        )
+                )
+            });
+            return (
+                <>
+                    <div className='container-fluid' >
+                        <OwlCarousel id="customer-testimonoals" className="owl-carousel owl-theme" {...options}>
+                            {allcarouselItem}
+                        </OwlCarousel>
+                        <div>
+                        </div>
+                    </div>
+                </>
+            )
+        }
     }
-}
 
-export default CarouselHome
+    export default CarouselHome
 
+// import React, { useEffect, useState } from 'react';
+// import TestiMonialsDetails from '../TestiMonialsDetails/TestiMonialsDetails'
+// import OwlCarousel from 'react-owl-carousel';
+// import userPic from '../../image/user-one.png';
+// import './TestiMonials.css'
 
+// const TestiMonials = () => {
 
-
-
-
-
-// export default function CarouselHome() {
+//     const testiMonials = [
+//         {
+//             name: 'Rekob Ramya',
+//             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
+//             address: 'USA',
+//             img: 'https://i.ibb.co/hgGJc8d/Gareth-Bale.jpg'
+//         },
+//         {
+//             name: 'Brandon Savage',
+//             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
+//             address: 'USA',
+//             img: 'https://i.ibb.co/z7Kp6yr/np-file-33188.jpg'
+//         },
+//         {
+//             name: 'Steve Burns',
+//             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
+//             address: 'USA',
+//             img: 'https://i.ibb.co/CP5sj7g/2856040-58866808-2560-1440.jpg'
+//         },
+//         {
+//             name: 'Kevin Canlas',
+//             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
+//             address: 'USA',
+//             img: 'https://i.ibb.co/10SYccm/1552313010-354215-noticia-normal.jpg'
+//         },
+//     ]
+//     };
 //     return (
-//         <>
+//         <section id="testimonial" className="testimonials pt-70 pb-70">
+//             <div className="container mt-5">
+//                 <h4 className="miniTitle text-center">TESTIMONIALS</h4>
+//                 <div className="text-center ">
+//                     <h3 className="sectionTitle">What Our Clients are Saying?</h3>
+//                 </div>
+//                 <p className="text-center ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+//                 <div className="row">
+//                     <div className="col-md-12">
+//                         <OwlCarousel id="customer-testimonoals" className="owl-carousel owl-theme" {...options}>
+//                             {
+//                                 testiMonials.length === 0 ?
+//                                     <div class="item">
+//                                         <div class="shadow-effect">
+//                                             <img class="img-circle" src={userPic} />
 
-//             <Carousel className='carousel_body' >
-//                 <Carousel.Item interval={100}>
-//                     <img
-//                         className="d-block w-100"
-//                         src={blog_2}
-//                         alt="First slide"
-//                     />
-//                     <Carousel.Caption className='center'>
-//                         <h3>First slide label</h3>
-//                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-//                     </Carousel.Caption>
-//                 </Carousel.Item>
-//                 <Carousel.Item interval={500}>
-//                     <img
-//                         className="d-block w-100"
-//                         src={blog_1}
-//                         alt="Second slide"
-//                     />
-//                     <Carousel.Caption className='center'>
-//                         <h3>Second slide label</h3>
-//                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-//                     </Carousel.Caption>
-//                 </Carousel.Item>
-//                 <Carousel.Item>
-//                     <img
-//                         className="d-block w-100"
-//                         src={blog_3}
-//                         alt="Third slide"
-//                     />
-//                     <Carousel.Caption className='center'>
-//                         <h3>Third slide label</h3>
-//                         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-//                     </Carousel.Caption>
-//                 </Carousel.Item>
-//             </Carousel>
+//                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+//                                         </div>
+//                                         <div class="testimonial-name">
+//                                             <h5>Rajon Rony</h5>
+//                                             <small>ITALY</small>
+//                                         </div>
+//                                     </div> :
+//                                     testiMonials.map(testiMonialDetail => {
+//                                         return (
+//                                             <TestiMonialsDetails testiMonialDetail={testiMonialDetail} key={testiMonialDetail._key} />
 
-//         </>
-//     )
-// }
+//                                         )
+//                                     })
+//                             }
+//                         </OwlCarousel>
+//                     </div>
+//                 </div>
+//             </div>
+//         </section>
+//     );
+// };
+
+// export default TestiMonials;

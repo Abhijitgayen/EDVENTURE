@@ -6,7 +6,7 @@ export class AllCourse extends Component {
         return (
             <>
                 <Container className='course_container'>
-                    <h2 className='co_text'> Course Adventure</h2>
+                    <h4 className='section_heading'> Course Adventure</h4>
                     <Accordion defaultActiveKey="0">
                         <Accordion.Item eventKey="0">
                             <Row>

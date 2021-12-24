@@ -8,6 +8,7 @@ function DemoClass() {
         <>
             <Container>
                 <Row>
+                    <h4 className='section_heading'>Book your free demo class: </h4>
                     <Col className='demo_text col-12 col-sm-12 col-md-5 col-xl-6'>
                         <Row className='demp_det'>
                             <Col className='col-4 '>

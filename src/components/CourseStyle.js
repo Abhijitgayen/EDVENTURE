@@ -6,7 +6,7 @@ export default function CourseStyle(set) {
     return (
         <>
             <Container className='course_all'>
-                <h1>What's Your goal ?</h1>
+                <h4 className='section_heading'>What's Your goal ?</h4>
                 <Row>
                     <Accordion defaultActiveKey="0" className=' col-12 col-sm-12 col-md-4' flush >
                         <Accordion.Item eventKey="0">

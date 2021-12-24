@@ -6,6 +6,7 @@ import CourseStyle from './CourseStyle';
 import DemoClass from './DemoClass';
 import blog_1 from '../images/blog1.jpg'
 import tutorial_video from '../images/tutorial_video.svg'
+import CarouselHome from './CarouselHome';
 
 export default function Home() {
     return (
@@ -15,7 +16,7 @@ export default function Home() {
                     <Container>
                         <Row>
                             <Col className="home_top_text col-12 col-sm-12 col-md-8 col-xl-6">
-                                <h1>EMBARK ON AN ADVENTURE TO MORDERN INTERACTIVE EDUCATION</h1>
+                                <h1 >EMBARK ON AN ADVENTURE TO MORDERN INTERACTIVE EDUCATION</h1>
                                 <p>Handcrafted at IIT , Edventure aim to impart rich Courses helping Students in academics as well as competitative Exams</p>
                                 <Button variant="light" href='#venture' >VENTURE NOW</Button>
                             </Col >
@@ -69,7 +70,7 @@ export default function Home() {
             <section className="home_section">
 
                 <Container className='table_section'> 
-                    <h3 className='table_t'> Let no pandemic hamper your results !!</h3>
+                    <h4 className='section_heading'> Let no pandemic hamper your results !!</h4>
                     <Row >
                         <Col className='table_set_img col-12 col-sm-12 col-md-5 col-xl-4'>
                             <img src={tutorial_video} alt='' className='table_img'></img>
@@ -115,9 +116,7 @@ export default function Home() {
                 {/* why Edventure */}
                 <div className='why_ed_all'>
                     <Container>
-                        <h4 className='why_ed_t'>
-                            Why Edventure:
-                        </h4>
+                        <h4 className='section_heading'>Why Edventure:</h4>
                         <Row className='why_ed'>
                             <div className='why_edven col-6 col-sm-4 col-md-4 col-xl-2' >
                                 <img src={blog_1} className='why_edven_img' alt=' ' />
@@ -146,8 +145,9 @@ export default function Home() {
                         </Row>
                     </Container>
                 </div>
-                <h4>Let’s hear from our students and parents:</h4>
+                <h4 className='section_heading'>Let’s hear from our students and parents:</h4>
                 <Container>
+                    <CarouselHome/>
                     <Row>
 
                         <Col>
