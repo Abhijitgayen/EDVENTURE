@@ -1,5 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
+import { CloseButton, Modal } from 'react-bootstrap';
+
 import OwlCarousel from 'react-owl-carousel';
+import ReactPlayer from "react-player";
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import blog_1 from '../images/blog1.jpg';
@@ -7,16 +10,19 @@ import blog_2 from '../images/blog2.jpg';
 import blog_3 from '../images/blog3.jpg';
 import blog_4 from '../images/blog4.jpg';
 import blog_5 from '../images/blog5.jpg';
+// import {BiLeftArrow,BiRightArrow} from 'react-icons/bi';
 const options = {
     loop: true,
-    center: true,
+    center: false,
+    rewind: true,
     items: 3,
     margin: 0,
     autoplay: true,
-    dots: true,
+    dots: false,
     autoplayTimeout: 4500,
     smartSpeed: 450,
-    nav: false,
+    nav: true,
+    // navText : ['<BiLeftArrow/>','<BiRightArrow/>'],
     responsive: {
         0: {
             items: 1
@@ -30,6 +36,31 @@ const options = {
     }
 };
 
+function Example(props) {
+    // const values = [''];
+    const [fullscreen, setFullscreen] = useState(true);
+    const [show, setShow] = useState(false);
+    
+  const handleClose = () => setShow(false);
+
+    function handleShow() {
+        setFullscreen('xxl-down');
+        setShow(true);
+    }
+
+    return (
+        <>
+            <div className="me-2" onClick={() => handleShow()}>
+                <img className="img-circle" src={props.src} alt=' ' />
+            </div>
+            <Modal id='review_demo' show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
+             <CloseButton aria-label="Hide"  variant="white" onClick={handleClose} />
+                <ReactPlayer width='80%' id='youtube_demo' height='80%' url={props.link} />
+            </Modal>
+        </>
+    );
+}
+
 
 export class CarouselHome extends Component {
     constructor(props) {
@@ -39,211 +70,144 @@ export class CarouselHome extends Component {
             carouselItem: [
                 {
                     id: 0,
-                    title: 'Slide One',
-                    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illum.',
+                    title: 'Father of Manav',
+                    content: 'BYJU\'S helped Manav pick up his Learning pace in Science',
+                    details: 'Class 9| Bangalore',
                     img: blog_1,
-                    interval: 1000
-
+                    link_of_review: 'https://www.youtube.com/watch?v=5zlQmlJf8Gg&ab_channel=TheWonderinBookshelf',
                 },
                 {
                     id: 1,
-                    title: 'Slide Two',
-                    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illum.',
+                    title: 'Father of Manav',
+                    content: 'BYJU\'S helped Manav pick up his Learning pace in Science',
+                    details: 'Class 9| Bangalore',
                     img: blog_2,
-                    interval: 1000
-
+                    link_of_review: 'https://www.youtube.com/watch?v=5zlQmlJf8Gg&ab_channel=TheWonderinBookshelf',
                 },
                 {
                     id: 2,
-                    title: 'Slide Three',
-                    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illum.',
+                    title: 'Father of Manav',
+                    content: 'BYJU\'S helped Manav pick up his Learning pace in Science',
+                    details: 'Class 9| Bangalore',
                     img: blog_3,
-                    interval: 1000
-
+                    link_of_review: 'https://www.youtube.com/watch?v=5zlQmlJf8Gg&ab_channel=TheWonderinBookshelf',
                 },
                 {
                     id: 3,
-                    title: 'Slide Four',
-                    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illum.',
+                    title: 'Father of Manav',
+                    content: 'BYJU\'S helped Manav pick up his Learning pace in Science',
+                    details: 'Class 9| Bangalore',
                     img: blog_4,
-                    interval: 1000
-
+                    link_of_review: 'https://www.youtube.com/watch?v=5zlQmlJf8Gg&ab_channel=TheWonderinBookshelf',
                 },
                 {
                     id: 4,
-                    title: 'Slide Five',
-                    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illum.',
+                    title: 'Father of Manav',
+                    content: 'BYJU\'S helped Manav pick up his Learning pace in Science',
+                    details: 'Class 9| Bangalore',
                     img: blog_5,
-                    interval: 1000
-
+                    link_of_review: 'https://www.youtube.com/watch?v=5zlQmlJf8Gg&ab_channel=TheWonderinBookshelf',
                 },
                 {
                     id: 5,
-                    title: 'Slide Six',
-                    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illum.',
+                    title: 'Father of Manav',
+                    content: 'BYJU\'S helped Manav pick up his Learning pace in Science',
+                    details: 'Class 9| Bangalore',
                     img: blog_1,
-                    interval: 1000
-
+                    link_of_review: 'https://www.youtube.com/watch?v=5zlQmlJf8Gg&ab_channel=TheWonderinBookshelf',
                 },
                 {
                     id: 6,
-                    title: 'Slide Seven',
-                    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illum.',
+                    title: 'Father of Manav',
+                    content: 'BYJU\'S helped Manav pick up his Learning pace in Science',
+                    details: 'Class 9| Bangalore',
                     img: blog_1,
-                    interval: 1000
-
+                    link_of_review: 'https://www.youtube.com/watch?v=5zlQmlJf8Gg&ab_channel=TheWonderinBookshelf',
                 },
                 {
                     id: 7,
-                    title: 'Slide Eight',
-                    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illum.',
+                    title: 'Father of Manav',
+                    content: 'BYJU\'S helped Manav pick up his Learning pace in Science',
+                    details: 'Class 9| Bangalore',
                     img: blog_1,
-                    interval: 1000
-
+                    link_of_review: 'https://www.youtube.com/watch?v=5zlQmlJf8Gg&ab_channel=TheWonderinBookshelf',
                 },
                 {
                     id: 8,
-                    title: 'Slide Nine',
-                    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illum.',
+                    title: 'Father of Manav',
+                    content: 'BYJU\'S helped Manav pick up his Learning pace in Science',
+                    details: 'Class 9| Bangalore',
                     img: blog_1,
-                    interval: 1000
-
+                    link_of_review: 'https://www.youtube.com/watch?v=5zlQmlJf8Gg&ab_channel=TheWonderinBookshelf',
                 },
                 {
                     id: 9,
-                    title: 'Slide Ten',
-                    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illum.',
+                    title: 'Father of Manav',
+                    content: 'BYJU\'S helped Manav pick up his Learning pace in Science',
+                    details: 'Class 9| Bangalore',
                     img: blog_1,
-                    interval: 1000
-
+                    link_of_review: 'https://www.youtube.com/watch?v=5zlQmlJf8Gg&ab_channel=TheWonderinBookshelf',
                 },
                 {
                     id: 10,
-                    title: 'Slide Eleven',
-                    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illum.',
+                    title: 'Father of Manav',
+                    content: 'BYJU\'S helped Manav pick up his Learning pace in Science',
+                    details: 'Class 9| Bangalore',
                     img: blog_1,
-                    interval: 1000
-
+                    link_of_review: 'https://www.youtube.com/watch?v=5zlQmlJf8Gg&ab_channel=TheWonderinBookshelf',
                 },
                 {
                     id: 11,
-                    title: 'Slide Twelve',
-                    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illum.',
+                    title: 'Father of Manav',
+                    content: 'BYJU\'S helped Manav pick up his Learning pace in Science',
+                    details: 'Class 9| Bangalore',
                     img: blog_1,
-                    interval: 1000
-
+                    link_of_review: 'https://www.youtube.com/watch?v=5zlQmlJf8Gg&ab_channel=TheWonderinBookshelf',
                 },
-
+                {
+                    id: 12,
+                    title: 'Father of Manav',
+                    content: 'BYJU\'S helped Manav pick up his Learning pace in Science',
+                    details: 'Class 9| Bangalore',
+                    img: blog_1,
+                    link_of_review: 'https://www.youtube.com/watch?v=5zlQmlJf8Gg&ab_channel=TheWonderinBookshelf',
+                },
             ],
         };
-    //Owl Carousel Settings
-        
-        }
-        render() {
-            const allcarouselItem = this.state.carouselItem.map((carousel) => {
-                return (
-                    <>
-                    <div className='item' key={carousel.id}>
-                    <div class="shadow-effect">
-                        <img class="img-circle" src={carousel.img} alt=' ' />
-                        <p>{carousel.content}</p>
-                    </div>
-                    <div class="testimonial-name">
-                        <h6>{carousel.title}</h6>
-                    </div>
-                </div>
-                </>
+        //Owl Carousel Settings
 
-                )
-            });
+    }
+    render() {
+        const allcarouselItem = this.state.carouselItem.map((carousel) => {
             return (
                 <>
-                    <div className='container-fluid' >
-                        <OwlCarousel id="customer-testimonoals" className="owl-carousel owl-theme" {...options}>
-                            {allcarouselItem}
-                        </OwlCarousel>
-                        <div>
+                    <div className='item' key={carousel.id}>
+                        <div className="shadow-effect">
+                            <Example link={carousel.link_of_review} src={carousel.img} />
+                            <p>{carousel.content}</p>
+                        </div>
+                        <div className="testimonial-name">
+                            <h6>{carousel.title}</h6>
+                            <p>{carousel.details}</p>
                         </div>
                     </div>
                 </>
+
             )
-        }
+        });
+        return (
+            <>
+                <div className='container-fluid' >
+                    <OwlCarousel id="customer-testimonoals" className="owl-carousel owl-theme" {...options}>
+                        {allcarouselItem}
+
+                    </OwlCarousel>
+                    <div>
+                    </div>
+                </div>
+            </>
+        )
     }
+}
 
-    export default CarouselHome
-
-// import React, { useEffect, useState } from 'react';
-// import TestiMonialsDetails from '../TestiMonialsDetails/TestiMonialsDetails'
-// import OwlCarousel from 'react-owl-carousel';
-// import userPic from '../../image/user-one.png';
-// import './TestiMonials.css'
-
-// const TestiMonials = () => {
-
-//     const testiMonials = [
-//         {
-//             name: 'Rekob Ramya',
-//             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
-//             address: 'USA',
-//             img: 'https://i.ibb.co/hgGJc8d/Gareth-Bale.jpg'
-//         },
-//         {
-//             name: 'Brandon Savage',
-//             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
-//             address: 'USA',
-//             img: 'https://i.ibb.co/z7Kp6yr/np-file-33188.jpg'
-//         },
-//         {
-//             name: 'Steve Burns',
-//             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
-//             address: 'USA',
-//             img: 'https://i.ibb.co/CP5sj7g/2856040-58866808-2560-1440.jpg'
-//         },
-//         {
-//             name: 'Kevin Canlas',
-//             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
-//             address: 'USA',
-//             img: 'https://i.ibb.co/10SYccm/1552313010-354215-noticia-normal.jpg'
-//         },
-//     ]
-//     };
-//     return (
-//         <section id="testimonial" className="testimonials pt-70 pb-70">
-//             <div className="container mt-5">
-//                 <h4 className="miniTitle text-center">TESTIMONIALS</h4>
-//                 <div className="text-center ">
-//                     <h3 className="sectionTitle">What Our Clients are Saying?</h3>
-//                 </div>
-//                 <p className="text-center ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-//                 <div className="row">
-//                     <div className="col-md-12">
-//                         <OwlCarousel id="customer-testimonoals" className="owl-carousel owl-theme" {...options}>
-//                             {
-//                                 testiMonials.length === 0 ?
-//                                     <div class="item">
-//                                         <div class="shadow-effect">
-//                                             <img class="img-circle" src={userPic} />
-
-//                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-//                                         </div>
-//                                         <div class="testimonial-name">
-//                                             <h5>Rajon Rony</h5>
-//                                             <small>ITALY</small>
-//                                         </div>
-//                                     </div> :
-//                                     testiMonials.map(testiMonialDetail => {
-//                                         return (
-//                                             <TestiMonialsDetails testiMonialDetail={testiMonialDetail} key={testiMonialDetail._key} />
-
-//                                         )
-//                                     })
-//                             }
-//                         </OwlCarousel>
-//                     </div>
-//                 </div>
-//             </div>
-//         </section>
-//     );
-// };
-
-// export default TestiMonials;
+export default CarouselHome
