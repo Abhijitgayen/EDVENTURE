@@ -1,3 +1,4 @@
+// this is CarouselHome for review for student and parents.
 import React, { Component, useState } from 'react';
 import { CloseButton, Modal } from 'react-bootstrap';
 
@@ -18,7 +19,7 @@ const options = {
     items: 3,
     margin: 0,
     autoplay: true,
-    dots: false,
+    dots: true,
     autoplayTimeout: 4500,
     smartSpeed: 450,
     nav: true,
@@ -181,14 +182,14 @@ export class CarouselHome extends Component {
         const allcarouselItem = this.state.carouselItem.map((carousel) => {
             return (
                 <>
-                    <div className='item' key={carousel.id}>
+                    <div className='item'  key={carousel.id}>
                         <div className="shadow-effect">
                             <Example link={carousel.link_of_review} src={carousel.img} />
                             <p>{carousel.content}</p>
-                        </div>
                         <div className="testimonial-name">
                             <h6>{carousel.title}</h6>
                             <p>{carousel.details}</p>
+                        </div>
                         </div>
                     </div>
                 </>

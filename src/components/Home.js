@@ -7,6 +7,7 @@ import DemoClass from './DemoClass';
 import blog_1 from '../images/blog1.jpg'
 import tutorial_video from '../images/tutorial_video.svg'
 import CarouselHome from './CarouselHome';
+import TutorCarouselHome from './TutorCarouselHome';
 
 export default function Home() {
     return (
@@ -147,10 +148,11 @@ export default function Home() {
                 </div>
                 <h4 className='section_heading'>Let’s hear from our students and parents:</h4>
                 <Container>
-                    <CarouselHome/>
                     <Row>
-
                         <Col>
+                    <CarouselHome/>
+                        <h4 className='section_heading'>Meet our talented mentors:</h4>
+                    <TutorCarouselHome/>
                         </Col>
                     </Row>
                 </Container>

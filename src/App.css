@@ -476,18 +476,48 @@ input::placeholder{
     width: 15px;
     height: 100px;
     position: absolute;
-    top: 40%;
-    margin-left: 20px;
+    top: 30%;
+    left: -25px;
     display: block !important;
-    border:0px solid black;
 }
 .owl-next {
     width: 15px;
     height: 100px;
     position: absolute;
-    top: 40%;
+    top: 30%;
     right: -25px;
     display: block !important;
     border:0px solid black;
+}
+/*home Tutorcarouselhome work here*/
+.tutor-img-circle-pos{
+/* background-color: blueviolet; */
+    position: relative;
+    bottom: -40px;
+}
+.tutor-img-circle{
+    max-width: 90px;
+    min-height: 90px;
+    margin: auto;
+    border-radius: 50%;
+}
+.tutor-details{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: rgba(76, 170, 157, 0.568);
+    border-radius: 25px;
+    padding: 42px 20px 10px 20px;
+    min-height: 270px;
+}
+.tutor-testimonial-name{
+    display: flex;
+    flex-direction: row;
+}
+.left-details{
+    text-align: left;
+}
+.right-details{
+    text-align: right;
 }
  /*carousel css end*/
