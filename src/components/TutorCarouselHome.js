@@ -15,7 +15,7 @@ const options = {
     items: 3,
     margin: 0,
     autoplay: true,
-    dots: false,
+    dots: true,
     autoplayTimeout: 4500,
     smartSpeed: 450,
     nav: true,

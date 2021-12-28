@@ -520,4 +520,7 @@ input::placeholder{
 .right-details{
     text-align: right;
 }
+.carousel_all{
+    margin: auto;
+}
  /*carousel css end*/

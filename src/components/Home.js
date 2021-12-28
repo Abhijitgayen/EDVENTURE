@@ -149,7 +149,7 @@ export default function Home() {
                 <h4 className='section_heading'>Let’s hear from our students and parents:</h4>
                 <Container>
                     <Row>
-                        <Col>
+                        <Col className='carousel_all col-11 col-sm-11 col-md-11 col-xl-11'>
                     <CarouselHome/>
                         <h4 className='section_heading'>Meet our talented mentors:</h4>
                     <TutorCarouselHome/>
