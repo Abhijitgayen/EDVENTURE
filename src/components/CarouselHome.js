@@ -165,14 +165,6 @@ export class CarouselHome extends Component {
                     img: blog_1,
                     link_of_review: 'https://www.youtube.com/watch?v=5zlQmlJf8Gg&ab_channel=TheWonderinBookshelf',
                 },
-                {
-                    id: 12,
-                    title: 'Father of Manav',
-                    content: 'BYJU\'S helped Manav pick up his Learning pace in Science',
-                    details: 'Class 9| Bangalore',
-                    img: blog_1,
-                    link_of_review: 'https://www.youtube.com/watch?v=5zlQmlJf8Gg&ab_channel=TheWonderinBookshelf',
-                },
             ],
         };
         //Owl Carousel Settings

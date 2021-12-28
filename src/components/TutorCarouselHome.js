@@ -136,14 +136,6 @@ export class CarouselHome extends Component {
                     no_std: 25,
                     img: blog_1
                 },
-                {
-                    id: 12,
-                    title: 'Abhijit Gayen',
-                    content: 'The Math program is such a unique one. We believe in Cueing, and the program is individually tailored to the student\'s ability. This builds confidence in students, and thus, parents love it',
-                    details: 'M.sc in math and computing',
-                    no_std: 25,
-                    img: blog_1
-                },
             ],
         };
         //Owl Carousel Settings
